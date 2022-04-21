@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入法选择</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            margin: auto;
+            text-align: center;
+        }
+        .box2{
+            display: none;
+            width: 60px;
+            height: 90px;
+            margin: auto;
+            margin-top: 6px;
+        }
+        p{
+            width: 60px;
+            height: 30px;
+            border: 1px solid #a1a1ec;
+            color: blue;
+        }
+        .sx{
+            border-bottom: none;
+        }
+        .py{
+            border-top: none;
+            border-bottom: none;
+        }
+        p:hover{
+            background: #8383e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button>输入法</button>
+        <div class="box2">
+            <p class="sx">手写</p>
+            <p class="py">拼音</p>
+            <p class="gb">关闭</p>
+        </div>
+    </div>
+</body>
+<script>
+    var button=document.querySelector('button');
+    var box2=document.querySelector('.box2');
+    var gb=document.querySelector('.gb');
+    var done=false;
+    button.onclick=function(){
+        box2.style.display='block';
+        done=!done;
+        if(done==false){
+            box2.style.display='none';
+        }else{
+            box2.style.display='block';
+        }
+    }
+    gb.onclick=function(){
+        box2.style.display='none';
+        done=false;
+    }
+</script>
+</html>

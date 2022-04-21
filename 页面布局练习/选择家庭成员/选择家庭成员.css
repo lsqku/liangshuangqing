@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 750px;
+    min-width: 320px;
+    background: #f6f6f6;
+    font-size: .2rem;
+    margin: auto;
+}
+.tou{
+    width: 7.5rem;
+    height: 1rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 .2rem;
+}
+.tou>b{
+    font-size: .4rem;
+}
+.tou>span{
+    margin: auto;
+    font-size: .4rem;
+}
+.a{
+    width: 7.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .4rem;
+    padding: 0 .2rem;
+}
+.wyr{
+    width: 100%;
+    height: 2rem;
+    background: white;
+    border-bottom: .01rem solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 .2rem;
+}
+.wyr>img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.you{
+    flex: 1;
+    height: 2rem;
+}
+.top{
+    flex: 1;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+.name{
+    font-size: .4rem;
+}
+.age{
+    font-size: .28rem;
+    color: #c0c0c0;
+    margin-left: .3rem;
+}
+.top>img{
+    width: .6rem;
+    height: .6rem;
+    margin-left: .12rem;
+}
+.down{
+    flex: 1;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+.dxt{
+    width: 1.2rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    border-radius: .12rem;
+    background: #fff8e4;
+    color: #fdde83;
+    font-size: .28rem;
+}
+.jzb{
+    width: 1.2rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    border-radius: .12rem;
+    background: #fff1f0;
+    color: #fb9b94;
+    font-size: .28rem;
+    margin-left: .2rem;
+}
+.gxy{
+    width: 1.2rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    border-radius: .12rem;
+    background: #f1f2fe;
+    color: #9ca3f8;
+    font-size: .28rem;
+}

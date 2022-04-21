@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标移入移出改变样式</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: black;
+            text-align: center;
+            margin: auto;
+            border: 10px solid ;
+        }
+        p{
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>鼠标移入改变样式，鼠标移出恢复。</p>
+    </div>
+</body>
+<script>
+    var div=document.querySelector('div');
+    var p=document.querySelector('p');
+    div.onmouseover=function(){
+        div.style.background="#ddd";
+        div.style.borderColor="red";
+        p.style.color='red';
+    }
+    div.onmouseout=function(){
+        div.style.background="black";
+        div.style.borderColor="black";
+        p.style.color='white';
+    }
+</script>
+</html>

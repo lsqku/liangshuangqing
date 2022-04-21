@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页换肤</title>
+    <style>
+        .box{
+            display: flex;
+            width:500px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .box>div{
+            width: 20px;
+            height: 20px;
+        }
+        .box-1{
+            background: red;
+        }
+        .box-2{
+            background: green;
+            margin-left: 10px;
+        }
+        .box-3{
+            background: black;
+            margin-left: 10px;
+        }
+        .box1,.box2,.box3{
+            display: none;
+            width: 10px;
+            height: 10px;
+            background: white;
+            margin: 5px auto;
+        }
+        tr{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-1">
+            <div class="box1"></div>
+        </div>
+        <div class="box-2">
+            <div class="box2"></div>
+        </div>
+        <div class="box-3">
+            <div class="box3"></div>
+        </div>
+    </div>
+    <table cellspacing="0" border="1px" bordercolor="green" width="500px" align="center">
+        <tr align="center">
+            <td>新闻</td>
+            <td>娱乐</td>
+            <td>体育</td>
+            <td>电影</td>
+            <td>音乐</td>
+            <td>旅游</td>
+        </tr>
+    </table>
+</body>
+<script>
+    var red=document.querySelector('.box-1');
+    var box1=document.querySelector('.box1');
+    var body=document.querySelector('body');
+    var green=document.querySelector('.box-2');
+    var box2=document.querySelector('.box2');
+    var black=document.querySelector('.box-3');
+    var box3=document.querySelector('.box3');
+    red.onclick=function(){
+        box1.style.display="block";
+        body.style.background="red";
+        box2.style.display='none';
+        box3.style.display="none";
+    }
+    green.onclick=function(){
+        box2.style.display="block";
+        body.style.background="yellowgreen";
+        box1.style.display='none';
+        box3.style.display="none";
+    }
+    black.onclick=function(){
+        box3.style.display="block";
+        body.style.background="black";
+        box1.style.display='none';
+        box2.style.display='none';
+    }
+</script>
+</html>

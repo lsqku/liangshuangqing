@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单一按钮显示、隐藏</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 220px;
+            height: 220px;
+            margin: auto;
+            text-align: left;
+        }
+        ul{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            display: none;
+        }
+        li{
+            padding: 0 10px;
+            width: 100%;
+            height: 29px;
+            line-height: 29px;
+            list-style: none;
+            font-size: 13px;
+            color: #627484;
+            background: #e9edf2;
+        }
+        p{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background: #ced3d7;
+            color: #627484;
+            padding: 0 10px;
+            border: 1px solid black;
+            position: relative;
+        }
+        span{
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-bottom-color: black;
+            position: absolute;
+            right: 10px;
+            top: 12px;
+        }
+        .li{
+            border-bottom: 1px solid white;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>播放列表...
+            <span></span>
+        </p>
+        <ul>
+            <li>玩家之徒 - 蔡依林</li>
+            <li class="li">原谅我就是这样的女生 - 戴佩妮</li>
+            <li>猜不透 - 丁当</li>
+            <li>自导自演 - 周杰伦</li>
+            <li>浪漫窝 - 弦子</li>
+            <li>流年 - 王菲</li>
+        </ul>
+    </div>
+</body>
+<script>
+    var p=document.querySelector('p');
+    var ul=document.querySelector('ul');
+    var span=document.querySelector('span');
+    var lis=document.querySelectorAll('li');
+    var done=false;
+    p.onclick=function(){
+        done=!done;
+        if(done==false){
+            ul.style.display="none";
+            span.style.borderColor="transparent";
+            span.style.borderBottomColor="black";
+        }else{
+            ul.style.display="block";
+            span.style.borderColor="transparent";
+            span.style.borderTopColor="black";
+        }
+    }
+    for(var i=0;i<lis.length;i++){
+        lis[i].onmouseover=function(){
+            this.style.background="#ddd";
+        }
+        lis[i].onmouseout=function(){
+            this.style.background="";
+        }
+    }
+</script>
+</html>

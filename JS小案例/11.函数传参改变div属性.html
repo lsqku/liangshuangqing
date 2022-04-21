@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数传参改变div属性</title>
+    <style>
+        .box {
+            width: 320px;
+            height: 320px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .div {
+            width: 220px;
+            height: 220px;
+            background: black;
+            color: white;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        属性名 : <input type="text" value="background" class="inp1">
+        <br><br>
+        属性值 : <input type="text" value="green" class="inp2">
+        <br><br>
+        <button class="qd">确定</button>
+        <button class="cz">重置</button>
+        <br><br>
+        <div class="div">
+            在上方输入框输入"属性名"及"属性值"，点击确定按钮查看结果。
+        </div>
+    </div>
+</body>
+<script>
+    let qd = document.querySelector('.qd');
+    let cz = document.querySelector('.cz');
+    var inp1 = document.querySelector('.inp1');
+    var inp2 = document.querySelector('.inp2');
+    var div = document.querySelector('.div');
+    function fn(a, b) {
+        div.style[a] = [b];
+    }
+    qd.onclick = function () {
+        var a = inp1.value;
+        var b = inp2.value;
+        fn(a, b);
+    }
+    // qd.onclick=function(){
+    //   var name=inp1.value;
+    //   var shuxing=inp2.value;
+    //   div.style[name]=[shuxing];
+    // }
+    cz.onclick = function () {
+        div.style = '';
+    }
+</script>
+
+</html>

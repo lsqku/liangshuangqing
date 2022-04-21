@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>控制DIV属性</title>
+    <style>
+        .box{
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        #box1{
+            width: 100px;
+            height: 100px;
+            background: black;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button id="dowidth">变宽</button>
+        <button id="doheight">变高</button>
+        <button id="docolor">变色</button>
+        <button id="dostatus">隐藏</button>
+        <button id="doagain">重置</button>
+        <div id="box1"></div>
+    </div>
+</body>
+<!-- <script src="../jquery-1.11.1.js"></script> -->
+<script>
+    // 点击变宽按钮改变宽度
+    // $("#dowidth").on('click',function(){
+    //     $('#box1').css('width','300px');
+    // })
+    // 点击变高按钮改变高度
+    // $('#doheight').on("click",function(){
+    //     $('#box1').css('height','300px');
+    // })
+    // 点击变色按钮改变颜色
+    // $('#docolor').on('click',function(){
+    //     $('#box1').css('background','skyblue');
+    // })
+    // 点击隐藏按钮让盒子隐藏
+    // $('#dostatus').on('click',function(){
+    //     $('#box1').css('display','none');
+    // })
+
+    var dowidth=document.getElementById('dowidth');
+    var doheight=document.getElementById('doheight');
+    var docolor=document.getElementById('docolor');
+    var dostatus=document.getElementById('dostatus');
+    var doagain=document.getElementById('doagain');
+    var box1=document.getElementById('box1');
+
+    // 点击变宽按钮改变宽度
+    dowidth.onclick=function(){
+        box1.style.width='300px';
+    }
+    // 点击变高按钮改变高度
+    doheight.onclick=function(){
+        box1.style.height='300px';
+    }
+    // 点击变色按钮改变颜色
+    docolor.onclick=function(){
+        box1.style.background='skyblue';
+    }
+    // 点击隐藏按钮让盒子隐藏
+    dostatus.onclick=function(){
+        box1.style.display='none';
+    }
+    // 点击重置按钮变回原样
+    doagain.onclick=function(){
+        box1.style.width="100px";
+        box1.style.height="100px";
+        box1.style.background="black";
+        box1.style.display="block";
+    }
+</script>
+</html>

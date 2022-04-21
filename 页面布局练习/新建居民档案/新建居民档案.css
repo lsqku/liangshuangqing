@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 750px;
+    min-width: 320px;
+    margin: auto;
+    background: #f6f6f6;
+    font-size: .2rem;
+}
+.tou{
+    width: 100%;
+    height: .8rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 .2rem;
+    font-size: .36rem;
+}
+.bt{
+    margin: auto;
+}
+.jm{
+    width: 100%;
+    height: 1rem;
+    padding: 0 .2rem;
+    line-height: 1rem;
+    font-size: .36rem;
+}
+.shuru{
+    width: 100%;
+    min-height: 2rem;
+    background: white;
+}
+.shuru>p{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    padding: 0 .2rem;
+    border-bottom: .01rem solid #ddd;
+}
+.shuru>p>.xx{
+    font-size: .3rem;
+}
+.shuru>p>.xh{
+    font-size: .24rem;
+    color: red;
+}
+.shuru>p>input{
+    outline-style: none;
+    width: 3.3rem;
+    height: .6rem;
+    border: 0;
+    margin-left: .4rem;
+    font-size: .2rem;
+}
+.you{
+    margin-left: 1.4rem;
+    font-size: .3rem;
+    color: gray;
+}
+
+.jmbq{
+    width: 100%;
+    min-height: 2rem;
+    background: white;
+    margin-top: .2rem;
+}
+.jmbq>p{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    padding: 0 .2rem;
+    border-bottom: .01rem solid #ddd;
+}
+.jmbq>p>.xx{
+    font-size: .3rem;
+}
+.jmbq>p>.xh{
+    font-size: .24rem;
+    color: red;
+}
+.jmbq>p>input{
+    outline-style: none;
+    width: 3.3rem;
+    height: .6rem;
+    border: 0;
+    margin-left: .4rem;
+    font-size: .2rem;
+}
+.bq{
+    width: 100%;
+    height: 100%;
+    padding-bottom: .3rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.bq>p{
+    width: 1.4rem;
+    height: .6rem;
+    border: .01rem solid black;
+    color: #ddd;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .26rem;
+    border-radius: .14rem;
+    margin-left: .2rem;
+    margin-top: .2rem;
+}
+.gljr{
+    width: 100%;
+    height: 1.6rem;
+    background: white;
+    margin-top: .2rem;
+}
+.gljr>p{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .2rem;
+    border-bottom: .01rem solid #ddd;
+}
+.gljr>p>.span1{
+    font-size: .3rem;
+}
+.gljr>p>.span2{
+    font-size: .26rem;
+    color: grey;
+    margin-right: 1.3rem;
+}
+.gljr>p>.span3{
+    font-size: .34rem;
+    color: grey;
+}
+.anniu{
+    width: 100%;
+    height: 1.4rem;
+    background: white;
+    text-align: center;
+    line-height: 1.4rem;
+    margin-top: .4rem;
+}
+.anniu>button{
+    width: 90%;
+    height: 70%;
+    color: white;
+    background: #15d6ba;
+    border: none;
+    border-radius: .18rem;
+    font-size: .3rem;
+}

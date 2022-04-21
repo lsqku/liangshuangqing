@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易js年历</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 260px;
+            min-height: 260px;
+            border: 8px solid #eaeaea;
+            background: #eaeaea;
+            margin: auto;
+        }
+        .top{
+            width: 100%;
+            height: 180px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            background: #424242;
+            color: white;
+        }
+        .top>p{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .p4{
+            background: white;
+            color: pink;
+        }
+        .down{
+            width: 100%;
+            height: 60px;
+            background-color: #f1f1f1;
+            border: 1px solid white;
+            margin-top: 8px;
+            padding-top: 4px;
+        }
+        .div>p{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: #6d6d6d;
+        }
+        .down>.div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <p>
+                <b>1</b>
+                <span>JAN</span>
+            </p>
+            <p>
+                <b>2</b>
+                <span>FER</span>
+            </p>
+            <p>
+                <b>3</b>
+                <span>MAR</span>
+            </p>
+            <p class="p4">
+                <b>4</b>
+                <span>APR</span>
+            </p>
+            <p>
+                <b>5</b>
+                <span>MAY</span>
+            </p>
+            <p>
+                <b>6</b>
+                <span>JUN</span>
+            </p>
+            <p>
+                <b>7</b>
+                <span>JUL</span>
+            </p>
+            <p>
+                <b>8</b>
+                <span>AUG</span>
+            </p>
+            <p>
+                <b>9</b>
+                <span>SEP</span>
+            </p>
+            <p>
+                <b>10</b>
+                <span>OCT</span>
+            </p>
+            <p>
+                <b>11</b>
+                <span>NOV</span>
+            </p>
+            <p>
+                <b>12</b>
+                <span>DEC</span>
+            </p>
+        </div>
+        <div class="down">
+            <div class="div" style="display: block;">
+                <p>
+                    <b>1月节日</b>
+                    <span>元旦：1月1日至3日放假三天</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>2月节日</b>
+                    <span>春节：2月2日至8日放假7天</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>3月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>4月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>5月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>6月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>7月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>8月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>9月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>10月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>11月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+            <div class="div">
+                <p>
+                    <b>12月节日</b>
+                    <span>妇女节：3月8日妇女节，与我无关。</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let arr=document.querySelector('.top').querySelectorAll('p');
+    let text=document.querySelector('.down').querySelectorAll('.div');
+    console.log(arr,text);
+    for(var i=0;i<arr.length;i++){
+        arr[i].index=i;
+        arr[i].onmouseover=function(){
+            for(var s=0;s<arr.length;s++){
+                arr[s].className="";
+                console.log(this);
+                this.className="p4"
+            }
+            for(var b=0;b<text.length;b++){
+                text[b].style.display="none";
+                text[this.index].style.display="block";
+            }
+        }
+    }
+</script>
+</html>

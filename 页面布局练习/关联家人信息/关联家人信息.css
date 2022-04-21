@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 750px;
+    min-width: 320px;
+    margin: auto;
+    font-size: .2rem;
+    background: #f6f6f6;
+}
+.tou{
+    width: 7.5rem;
+    height: 1rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .2rem;
+}
+.tou>b{
+    flex: 1;
+    font-size: .4rem;
+}
+.tou>p{
+    flex: 1;
+    text-align: center;
+    font-size: .34rem;
+}
+.tou>span{
+    flex: 1;
+    font-size: .3rem;
+    text-align: right;
+    color:#51d8a9;
+}
+.jrxx{
+    width: 7.5rem;
+    height: 1.4rem;
+    padding: 0 .2rem;
+    line-height: 1.8rem;
+    font-size: .3rem;
+    color: #b8b9bb;
+}
+.xzjr{
+    width: 7.5rem;
+    height: 1rem;
+    padding: 0 .2rem;
+    background: white;
+    border-bottom: .01rem solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.xzjr>p{
+    font-size: .32rem;
+}
+.xzjr>span{
+    font-size: .3rem;
+    color: #d3d3d3;
+    margin-right: .4rem;
+}
+.xzjr>b{
+    font-size: .4rem;
+    color: #d3d3d3;
+}
+.xz{
+    width: 7.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #51d8a9;
+    font-size: .3rem;
+}
