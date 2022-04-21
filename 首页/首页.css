@@ -1,0 +1,218 @@
+@import url(../comm.css);
+.box {
+  width: 100%;
+  height: 4.4rem;
+  background: white;
+}
+
+.box .toubu {
+  width: 100%;
+  padding: .06rem .12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box .toubu p {
+  display: flex;
+  align-items: center;
+  font-size: .28rem;
+}
+
+.box .toubu p span {
+  margin-left: .1rem;
+}
+
+.box .renshu {
+  margin-top: .2rem;
+  width: 100%;
+  height: 3.3rem;
+  position: relative;
+}
+
+.box .renshu .up {
+  width: 97%;
+  margin: auto;
+  border-radius: .12rem;
+  height: 2.2rem;
+  padding-bottom: .3rem;
+  background: #4bd6b8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box .renshu .up p {
+  width: 33.33%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box .renshu .up p span {
+  font-size: .26rem;
+}
+
+.box .renshu .up p b {
+  font-size: .28rem;
+}
+
+.box .renshu .guanli {
+  width: 97%;
+  height: 1.4rem;
+  background: #f6f6f6;
+  position: absolute;
+  bottom: 0;
+  left: .12rem;
+  border-radius: .12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box .renshu .guanli .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box .renshu .guanli .div p {
+  width: .8rem;
+  height: .8rem;
+  border-radius: .14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .renshu .guanli .div p img {
+  width: .4rem;
+  height: .4rem;
+}
+
+.box .renshu .guanli .div .p1 {
+  background: #006ef1;
+}
+
+.box .renshu .guanli .div .p2 {
+  background: #fddb78;
+}
+
+.box .renshu .guanli .div .p3 {
+  background: #fa746b;
+}
+
+.box .renshu .guanli .div span {
+  font-size: .24rem;
+  margin-top: .08rem;
+}
+
+.box2 {
+  width: 100%;
+  min-height: 6rem;
+  padding-bottom: 2rem;
+  background: white;
+}
+
+.box2 .shenqing {
+  width: 100%;
+  min-height: 3rem;
+  margin-top: .2rem;
+  background: white;
+}
+
+.box2 .shenqing .bt {
+  width: 100%;
+  height: .6rem;
+  padding: 0 .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .24rem;
+}
+
+.box2 .shenqing .xmxx {
+  width: 96%;
+  height: 2rem;
+  margin: auto;
+  margin-top: .2rem;
+  padding: .2rem 0;
+  box-shadow: .02rem .02rem .1rem .02rem #ddd;
+}
+
+.box2 .shenqing .xmxx .xm {
+  width: 100%;
+  height: .36rem;
+  padding: .1rem .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box2 .shenqing .xmxx .xm p {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box2 .shenqing .xmxx .xm p img {
+  width: .6rem;
+  height: .6rem;
+}
+
+.box2 .shenqing .xmxx .xm p .jgmz {
+  width: 1rem;
+  height: .3rem;
+  text-align: center;
+  line-height: .3rem;
+  background: #e2e4fd;
+  border-radius: .06rem;
+  color: #9198f7;
+}
+
+.box2 .shenqing .xmxx .xm .dsh {
+  color: red;
+}
+
+.box2 .shenqing .xmxx .p {
+  width: 100%;
+  height: .36rem;
+  padding: 0 .2rem;
+  margin-top: .08rem;
+}
+
+.dibu {
+  width: 7.5rem;
+  height: 1.2rem;
+  background: white;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.dibu p {
+  width: 25%;
+  height: .9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dibu p img {
+  width: .4rem;
+  height: .4rem;
+}
+
+.dibu p span {
+  font-size: .24rem;
+}
+
+.dibu p .sy {
+  color: #3dd4a7;
+}
